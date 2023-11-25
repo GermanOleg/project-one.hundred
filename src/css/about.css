@@ -1,0 +1,49 @@
+.section-aboutus {
+    background-color: #1C2225;
+    top: 150px;
+    gap: 50px;
+    padding: 100px 0;
+    background-image:
+        url(../img/other/elements.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+        background-size: 545px;
+}
+
+.content {
+    display: list-item;
+    width: 50%;
+    gap: 40px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.header {
+    color: #FCF9F9;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    line-height: 1.11;
+    text-align: left;
+    margin-bottom: 54px;
+}
+
+.header-list {
+    display: inline;
+    vertical-align: text-bottom;
+    color: #FCF9F966;
+
+}
+
+.header-description {
+    gap: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+
+}
