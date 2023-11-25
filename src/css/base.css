@@ -28,6 +28,19 @@ img {
     height: auto;
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
 .container {
     max-width: 335px;
     padding: 0 20px;
