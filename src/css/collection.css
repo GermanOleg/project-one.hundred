@@ -1,0 +1,160 @@
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+}
+
+.collection-section {
+  background-image: url(../img/elements.png);
+  background-repeat: no-repeat;
+  background-position: 0 316px;
+  padding-top: 40px;
+}
+
+/* .collection-container {
+}
+
+.collection-link {
+} */
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37; /* 137.5% */
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+
+.collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+
+/* .collection-list-item {
+} */
+
+.collection-info {
+  padding-top: 18px;
+}
+
+.collection-thumb {
+}
+
+.collection-img {
+}
+
+.collection-item-name {
+  color: var(--white, #fcf9f9);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.collection-price {
+  color: rgba(252, 249, 249, 0.4);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .collection-section {
+    /* background-image: url(../img/elements.png); */
+    background-position: 0 271px;
+    padding-top: 50px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-section {
+      background-image: url(../img/other/half-ornament@2x.png);
+    }
+  }
+
+  .collection-list {
+    row-gap: 20px;
+  }
+
+  .collection-list-item {
+    flex-basis: calc((100% - 20px) / 2);
+    border: 2px solid transparent;
+    transition: border 250ms linear;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 98px;
+  }
+
+  .collection-list {
+    row-gap: 40px;
+  }
+
+  .collection-section {
+    /* background-image: url(../img/elements.png); */
+    background-position: 0 291px;
+    padding-top: 70px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-section {
+      background-image: url(../img/other/half-ornament@2x.png);
+    }
+  }
+
+  .collection-list-item {
+    flex-basis: calc((100% - 40px) / 3);
+    transition: border 250ms linear;
+    border-radius: 3px;
+  }
+
+  .collection-list-item:hover,
+  .collection-list-item:focus {
+    border: 2px solid #ecd979;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 100px;
+  }
+
+  .collection-list {
+    row-gap: 40px;
+  }
+
+  .collection-section {
+    background-image: url(../img/other/half-ornament.png);
+    background-position: 0 276px;
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .collection-section {
+      background-image: url(../img/other/half-ornament@2x.png);
+    }
+  }
+
+  .collection-list-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
