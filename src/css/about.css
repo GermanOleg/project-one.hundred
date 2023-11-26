@@ -2,9 +2,10 @@
     background-image:
         url(../img/other/elements-mobile.png);
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: 125px 611px;
     background-size: 459px;
 }
+
 
 .container-aboutus{
 display: block;
@@ -43,7 +44,7 @@ gap: 50px;
 
 .content img {
 display: block;
-    margin-top: auto;
+margin-top: 0;
     margin-bottom: 0;
     width: 50%;
     position: relative;
@@ -53,11 +54,8 @@ display: block;
  
 @media screen and (min-width: 1440px) {
 .section-aboutus {
-        background-image:
-            url(../img/other/elements.png);
-        background-repeat: no-repeat;
-        background-position: bottom right;
-        background-size: 545px;
+            background-position: 895px 141px;
+            background-size: 545px;
     }
 
 
@@ -85,6 +83,10 @@ display: block;
 
 }
 @media screen and (min-width: 768px) {
+    .section-aboutus {
+            background-position: 399px 473px;
+            background-size: 545px;
+        }
     .container-aboutus {
         display: block;
         margin-top: 1175px;
@@ -110,6 +112,10 @@ display: block;
 }
 
 @media screen and (min-width: 1280px) {
+    .section-aboutus {
+            background-position: 895px 141px;
+            background-size: 545px;
+        }
     .container-aboutus {
         display: flex;
         margin-top: 150px;
