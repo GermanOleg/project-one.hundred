@@ -1,28 +1,29 @@
 .collection-section {
-  /* background-image: url(../Img P100/Our Collection/mobile/ornament-coll-mob-min.png); */
-  background-repeat: no-repeat;
-  background-position: 0 316px;
   padding-top: 40px;
 }
 
-@media screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
-  .collection-section {
-    background-image: url(../ImgP100/OurCollection/mobile/ornament-coll-mob@x2-min.png);
-  }
-}
-/* .collection-container {
+.collection-container {
+  background-image: url(../Img-P100/Our-Collection/mobile/ornament-coll-mob-min.png);
+  background-repeat: no-repeat;
+  background-position: 0 296px;
 }
 
-.collection-link {
+/* @media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/mobile/ornament-coll-mob@x2-min.png);
+  }
 } */
+
+/* .collection-link {
+}  */
 
 .section-title {
   text-align: center;
   font-size: 32px;
   font-weight: 500;
-  line-height: 1.37; /* 137.5% */
+  line-height: 1.37;
   letter-spacing: -0.03em;
   margin-bottom: 40px;
 }
@@ -30,7 +31,7 @@
 .collection-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 /* .collection-list-item {
@@ -40,11 +41,14 @@
   padding-top: 18px;
 }
 
-/* .collection-thumb {
+.collection-thumb {
+  border-radius: 4px;
 }
 
 .collection-img {
-} */
+  border-radius: 4px;
+  /* width: 335px; */
+}
 
 .collection-item-name {
   color: var(--white, #fcf9f9);
@@ -68,22 +72,27 @@
 
 @media screen and (min-width: 768px) {
   .collection-section {
-    background-image: url(../ImgP100/OurCollection/tablet/ornament-coll-tb-min.png);
-    background-position: 0 271px;
     padding-top: 50px;
   }
 
-  @media screen and (min-resolution: 192dpi),
+  .section-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/tablet/ornament-coll-tb-min.png);
+    background-position: 0 221px;
+  }
+
+  /* @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .collection-section {
-      background-image: url(../ImgP100/OurCollection/tablet/ornament-coll-tb@x2-min.png);
+      background-image: url(../Img-P100/Our-Collection/tablet/ornament-coll-tb@x2-min.png);
+      background-repeat: no-repeat;
     }
-  }
-
-  .collection-list {
-    row-gap: 20px;
-  }
+  } */
 
   .collection-list-item {
     flex-basis: calc((100% - 20px) / 2);
@@ -94,52 +103,49 @@
 
 @media screen and (min-width: 1280px) {
   .collection-list {
-    row-gap: 40px;
+    gap: 40px 20px;
   }
 
   .collection-section {
-    /* background-image: url(../img/elements.png); */
-    background-position: 0 291px;
     padding-top: 70px;
   }
 
-  @media screen and (min-resolution: 192dpi),
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/desktop/ornament-coll-desk-min.png);
+  }
+
+  /* @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
-    .collection-section {
-      background-image: url(../img/other/half-ornament@2x.png);
+    .collection-container {
+      background-image: url(../Img-P100/Our-Collection/desktop/ornament-coll-desk@x2-min.png);
     }
-  }
+  } */
 
   .collection-list-item {
     flex-basis: calc((100% - 40px) / 3);
-    transition: border 250ms linear;
-    border-radius: 3px;
+    /* transition: border 250ms linear; */
   }
 
-  .collection-list-item:hover,
+  /* .collection-list-item:hover,
   .collection-list-item:focus {
     border: 2px solid #ecd979;
-  }
+  } */
 }
 
 @media screen and (min-width: 1440px) {
-  .collection-list {
-    row-gap: 40px;
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/desktop2/ornament-coll-desk2-min.png);
+    background-position: 0 231px;
   }
-
-  .collection-section {
-    background-image: url(../img/other/half-ornament.png);
-    background-position: 0 276px;
-  }
-
+  /* 
   @media screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
     screen and (min-device-pixel-ratio: 2) {
     .collection-section {
-      background-image: url(../img/other/half-ornament@2x.png);
+      background-image: url(../Img-P100/Our-Collection/desktop2/ornament-coll-desk2@x2-min.png);
     }
-  }
+  } */
 
   .collection-list-item {
     flex-basis: calc((100% - 40px) / 3);
