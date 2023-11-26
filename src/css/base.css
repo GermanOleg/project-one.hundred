@@ -28,16 +28,29 @@ img {
     height: auto;
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
 .container {
-    max-width: 335px;
+    max-width: 375px;
     padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .link {
@@ -47,3 +60,35 @@ img {
 .list {
     list-style-type: none;
 }
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+        .section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 98px;
+        }
+
+        .section {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+    }
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        padding: 0 100px;
+        }
+    }
