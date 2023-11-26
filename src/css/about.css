@@ -1,9 +1,9 @@
 .section-aboutus {
     background-image:
-        url(../img/other/elements.png);
+        url(../img/other/elements-mobile.png);
     background-repeat: no-repeat;
     background-position: bottom right;
-    background-size: 545px;
+    background-size: 459px;
 }
 
 .container-aboutus{
@@ -52,13 +52,15 @@ display: block;
 }
  
 @media screen and (min-width: 1440px) {
-    .section-aboutus {
-            background-image:
-                url(../img/other/elements.png);
-            background-repeat: no-repeat;
-            background-position: bottom right;
-            background-size: 459px;
-        }
+.section-aboutus {
+        background-image:
+            url(../img/other/elements.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 545px;
+    }
+
+
 .container-aboutus {
     display: flex;
         margin-top: 141px;
