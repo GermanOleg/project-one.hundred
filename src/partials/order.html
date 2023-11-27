@@ -1,0 +1,69 @@
+<section class="your-order"></section>
+<section class="section">
+  <div class="container order-container">
+    <div>
+      <h2 class="headline" id="order">
+        <span class="yellow-style">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form" name="order-form" autocomplete="off">
+        <div class="form-styles">
+          <div>
+            <lable class="label">
+              <input
+                type="text"
+                name="user-name"
+                class="form-input form-bg-style"
+                placeholder="Enter your full name"
+                pattern="[a-z]{1,15}"
+                required
+              />
+            </lable>
+          </div>
+          <div>
+            <lable class="label">
+              <input
+                type="text"
+                name="user-email"
+                class="form-input form-bg-style"
+                placeholder="Enter your email"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                required
+              />
+            </lable>
+          </div>
+          <div class="textarea">
+            <label class="label">
+              <textarea
+                name="user-comment"
+                class="customers-comments form-bg-style"
+                placeholder="Comments"
+              ></textarea>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="send-order-btn">
+          Send
+          <svg width="26" height="10" class="arrow-icon">
+            <use href="../Img-P100/symbol-defs.svg#icon-order"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="image-container">
+      <img
+        class="content-image-order"
+        srcset="
+          ./Img-P100/Your-Order/tablet/girl-order-tb.jpg     1x,
+          ../Img-P100/Your-Order/tablet/girl-order-tb@2x.jpg 2x
+          ../Img-P100/Your-Order/desktop/clothe-pc.jpg 1x, 
+          ../Img-P100/Your-Order/desktop/clothe-pc@2x.jpg 2x,
+        "
+        sizes="(min-width: 1280px) 524px, (min-width: 768px) 684px"
+        src="../Img-P100/Your-Order/tablet/girl-order-tb.jpg"
+        alt="Description of the image"
+        class="content-image-order"
+      />
+    </div>
+  </div>
+</section>
