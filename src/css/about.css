@@ -3,7 +3,7 @@
         url(../Img-P100/About-Us/mobile/ornament-about-mb-min.png);
     background-repeat: no-repeat;
     background-position: 125px 671px;
-    background-size: 459px;
+    padding-bottom: 40px;
 }
 
 
@@ -22,32 +22,24 @@ display: inline-flex;
         gap: 40px;
 }
 
-.header {
+.section-titel {
     color: #FCF9F9;
-    margin-bottom: 54px;
-    font-family: Manrope;
     font-size: 44px;
-    font-weight: 500;
-    line-height: 64px;
+    line-height: 137.5%;
     letter-spacing: -0.03em;
-    text-align: left;
     text-transform: capitalize;
-
 }
 
 .description {
     color: #FCF9F966;
-    font-family: Manrope;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.04em;
     text-align: left;
-    margin-bottom: 20px;
-
 }
 
-.content {
+.image {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
@@ -57,40 +49,7 @@ display: inline-flex;
     border-radius: 4px;
 }
 
-@media screen and (min-width: 1440px) {
-    .section-aboutus {
-        background-position: 895px 1006px;
-        background-size: 545px;
-    }
 
-
-    .container-aboutus {
-        display:inline-flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 50px;
-    }
-
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 40px;
-    }
-
-    .content {
-        display: block;
-        margin-left: auto;
-        margin-right: 0;
-        width: 50%;
-        position: relative;
-        width: 709px;
-        border-radius: 4px;
-    }
-
-}
 
 @media screen and (min-width: 768px) {
     .section-aboutus {
@@ -115,12 +74,13 @@ display: inline-flex;
             gap: 40px;
     }
 
-    .content {
+    .image {
         display: block;
         margin-left: auto;
         margin-right: 0;
         position: relative;
         width: 704px;
+        border-radius: 4px;
     }
 
 }
@@ -158,4 +118,39 @@ display: inline-flex;
             border-radius: 4px;
             position: relative;
         }
+}
+
+@media screen and (min-width: 1440px) {
+    .section-aboutus {
+        background-position: 895px 1056px;
+        background-size: 545px;
+    }
+
+
+    .container-aboutus {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .image {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        width: 50%;
+        position: relative;
+        width: 709px;
+        border-radius: 4px;
+    }
+
 }
