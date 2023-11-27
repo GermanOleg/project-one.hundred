@@ -102,7 +102,7 @@
     align-items: center;
     position: absolute;
     top: 80px;
-    right: 0;
+    right: 32px;
   }
 
   .advantage-text {
@@ -116,11 +116,12 @@
 
   .hero-decoration-img {
     border-radius: 50% / 100% 100% 0 0;
-    width: 157px;
+    width: 139px;
+    height: 197px;
     height: 98.5px;
     position: absolute;
     bottom: 0;
-    right: 20px;
+    right: 32px;
   }
 
   .images-hero {
@@ -153,7 +154,10 @@
 
   .advantage {
     top: 114px;
-    right: 20px;
+  }
+
+  .hero-decoration-img {
+    right: 0;
   }
 
   .break {
