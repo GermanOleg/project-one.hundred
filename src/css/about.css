@@ -3,6 +3,7 @@
         url(../Img-P100/About-Us/mobile/ornament-about-mb-min.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: 240px 284px;
     padding-bottom: 62px;
     padding-top: 42px;
 }
@@ -52,19 +53,19 @@ display: inline-flex;
     display: block;
     margin-top: 0;
     margin-bottom: 0;
-    width: 50%;
     position: relative;
-    width: 335px;
     border-radius: 4px;
+    width: 335px;
+        height: 499px;
 }
 
 
 
 @media screen and (min-width: 768px) {
     .section-aboutus {
+        background-size: 335px 484px;
         background-image:
                 url(../Img-P100/About-Us/tablet/ornament-about-tb-min.png);
-        background-position: right bottom;
     }
 
     .container-aboutus {
@@ -83,12 +84,8 @@ display: inline-flex;
     }
 
     .image {
-        display: block;
-        margin-left: auto;
-        margin-right: 0;
-        position: relative;
-        width: 704px;
-        border-radius: 4px;
+    width: 704px;
+    height: 545px;
     }
 
 }
@@ -96,8 +93,10 @@ display: inline-flex;
 @media screen and (min-width: 1280px) {
     .section-aboutus {
         background-size: 340px 384px;
-        background-position: right bottom;
-    }
+            background-image:
+                url(../Img-P100/About-Us/desktop2/ornament-about-desk2-min.png);
+    
+        }
 
         .container-aboutus {
             display: inline-flex;
@@ -116,21 +115,18 @@ display: inline-flex;
         }
     
         .image {
-            display: block;
             margin-top: auto;
-            margin-bottom: 0;
-            width: 50%;
-            border-radius: 4px;
-            position: relative;
+            width: 594px;
+            height: 545px;
         }
 }
 
 @media screen and (min-width: 1440px) {
     .section-aboutus {
-        background-size: 340px 384px;
-        background-position: right bottom;
+        background-size: 386px 476px;
+        background-image:
+                url(../Img-P100/About-Us/desktop/ornament-about-desk-min.png);
     }
-
 
     .container-aboutus {
         display: inline-flex;
@@ -149,13 +145,10 @@ display: inline-flex;
     }
 
     .image {
-        display: block;
         margin-left: auto;
         margin-right: 0;
-        width: 50%;
-        position: relative;
-        width: 709px;
-        border-radius: 4px;
+       width: 709px;
+        height: 545px; 
     }
 
 }
