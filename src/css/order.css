@@ -3,51 +3,54 @@
 /*MOBILE START*/
 .your-order {
   background-image: url(../Img-P100/Your-Order/mobile/girl-green-mb.jpg);
-  background-size: cover;
+  background-size: 375px 550px;
+  background-repeat: no-repeat;
+  background-position: top 40px center;
+  padding-top: 670px;
   padding-bottom: 80px;
-  width: 375px;
-  height: 550px;
 }
-@media screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/mobile/girl-green-mb@2x.jpg);
   }
 }
 
 /*MOBILE END*/
-
 /*TABLET START*/
 @media only screen and (min-width: 768px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb.jpg);
-    width: 768px;
-    height: 776px;
+    background-position: top 50px center;
+    padding-top: 926px;
+    background-size: 768px 776px;
   }
 }
 
-@media screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb@2x.jpg);
   }
 }
 
 /*TABLET END*/
-
 /*DeESKTOP 1 START*/
 @media only screen and (min-width: 1280px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc.jpg);
-    width: 1280px;
+    padding-top: 1000px;
+    background-position: top 75px center;
+    background-size: 1282px 776px;
   }
 }
 
-@media screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc@2x.jpg);
   }
@@ -61,14 +64,66 @@
     width: 1440px;
   }
 }
-@media screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-device-pixel-ratio: 2) {
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+  screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2@x2-min.jpg);
   }
 }
 /*DESKTOP 2 END*/
+
+/*щоб 2 беграунди працювали разом, користуюсь :: before/after, а щоб другий фон пропав на мобілці задаю наступне обмеження*/
+
+@media only screen and (min-width: 768px) {
+  .your-order {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .your-order::before,
+  .your-order::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .your-order::before {
+    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb.jpg);
+    background-position: top 50px center;
+    background-size: 768px 776px;
+  }
+
+  .your-order::after {
+    background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
+    background-position: bottom left;
+    background-size: 340px 384px;
+  }
+}
+@media only screen and (max-width: 767.5px) {
+  .image-container {
+    display: none;
+  }
+}
+picture {
+  margin: 0;
+  padding: 0;
+}
+.image-container {
+  margin-top: 100px;
+}
+@media only screen and (min-width: 1280px) {
+  .image-container {
+    margin-top: 0px;
+  }
+}
+
+/*перевірено*/
 
 /*HEADLINE*/
 .headline {
@@ -79,16 +134,10 @@
   letter-spacing: -0.03em;
   margin-bottom: 40px;
 }
-@media only screen and (min-width: 768px) {
-  .headline {
-    line-height: 1.31818;
-    font-size: 44px;
-    width: 542px;
-  }
-}
 .yellow-style {
   color: #ecd979;
 }
+
 /*Form styles*/
 .form-bg-style {
   background-color: inherit;
@@ -98,49 +147,51 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.02em;
+  color: #fcf9f9;
 }
-@media only screen and (min-width: 768px) {
-  .form-bg-style {
-    font-size: 16px;
-  }
+.form-bg-style:focus {
+  border-color: rgba(252, 249, 249, 0.6);
 }
+
 .form-input {
   border-radius: 15px;
   height: 47px;
   width: 335px;
-}
-@media only screen and (min-width: 768px) {
-  .form-input {
-    height: 50px;
-    width: 508px;
-  }
+  margin-bottom: 20px;
+  color: #fcf9f9;
 }
 .customers-comments {
   border-radius: 8px;
   height: 169px;
   width: 335px;
 }
+
 @media only screen and (min-width: 768px) {
+  .headline {
+    line-height: 1.31818;
+    font-size: 44px;
+    width: 542px;
+  }
+  .form-bg-style {
+    font-size: 16px;
+  }
+  .form-input {
+    height: 50px;
+    width: 508px;
+  }
   .customers-comments {
     height: 196px;
     width: 508px;
   }
 }
-.form-styles {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
+
 .textarea {
   margin-bottom: 40px;
 }
-.form {
-  margin-bottom: 100px;
-}
+
 /*Button*/
 .send-order-btn {
-  width: 145px;
+  max-width: 145px;
   height: 49px;
   background-color: inherit;
   color: #fcf9f9;
@@ -162,72 +213,52 @@
   .send-order-btn {
     padding: 14px 39px;
     margin: 0;
-    width: 168px;
     height: 50px;
     font-size: 16px;
   }
 }
+
 .send-order-btn:hover {
   border: 1px solid #ecd979;
 }
 .send-order-btn:focus {
   border: 1px solid #ecd979;
 }
-.arrow-icon {
-  transform: rotate(-30deg);
-  fill: #ecd979;
-  width: 26px;
-  height: 10px;
-}
-/*Images - працює норм*/
-@media only screen and (max-width: 376px) {
-  .image-container {
-    display: none;
-  }
-}
-/* Tablet second background start*/
+/*почала перевіряти*/
+/* Tablet second clothe background start*/
+
 @media only screen and (min-width: 768px) {
   .order-container {
     display: flex;
     flex-direction: column;
+  }
+  .your-order {
     background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
     background-repeat: no-repeat;
-    background-position: 0 956px;
-    /* background-size: 545px; */
-    /* width: 545px;
-    height: 484px;
-    /*  */
-  }
-  @media screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx),
-    screen and (min-device-pixel-ratio: 2) {
-    .order-container {
-      background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
-    }
-  }
-
-  .image-container {
-    margin-bottom: 79px;
+    background-position: bottom left;
+    background-size: 340px 384px;
   }
   .content-image-order {
-    width: 638px;
     border-radius: 4px;
     margin-left: auto;
   }
 }
 
-/* Tablet second background end*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
+  }
+}
+
+/* Tablet second clothe background end*/
 
 /* Desktop second background start*/
 @media only screen and (min-width: 1280px) {
   .order-container {
     flex-direction: row-reverse;
     gap: 50px;
-    background-image: url();
-  }
-  .content-image-order {
-    width: 524px;
-    height: auto;
   }
 }
 

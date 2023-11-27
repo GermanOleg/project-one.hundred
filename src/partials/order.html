@@ -1,5 +1,4 @@
-<section class="your-order"></section>
-<section class="section">
+<section class="section your-order">
   <div class="container order-container">
     <div>
       <h2 class="headline" id="order">
@@ -7,63 +6,76 @@
         Personalized approach and quality of service
       </h2>
       <form class="form" name="order-form" autocomplete="off">
-        <div class="form-styles">
-          <div>
-            <lable class="label">
-              <input
-                type="text"
-                name="user-name"
-                class="form-input form-bg-style"
-                placeholder="Enter your full name"
-                pattern="[a-z]{1,15}"
-                required
-              />
-            </lable>
-          </div>
-          <div>
-            <lable class="label">
-              <input
-                type="text"
-                name="user-email"
-                class="form-input form-bg-style"
-                placeholder="Enter your email"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                required
-              />
-            </lable>
-          </div>
-          <div class="textarea">
-            <label class="label">
-              <textarea
-                name="user-comment"
-                class="customers-comments form-bg-style"
-                placeholder="Comments"
-              ></textarea>
-            </label>
-          </div>
+        <label class="label">
+          <input
+            type="text"
+            name="user-name"
+            class="form-input form-bg-style"
+            placeholder="Enter your full name"
+            pattern="[a-z]{1,15}"
+            required
+          />
+        </label>
+
+        <label class="label">
+          <input
+            type="text"
+            name="user-email"
+            class="form-input form-bg-style"
+            placeholder="Enter your email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required
+          />
+        </label>
+
+        <div class="textarea">
+          <label class="label">
+            <textarea
+              name="user-comment"
+              class="customers-comments form-bg-style"
+              placeholder="Comments"
+            ></textarea>
+          </label>
         </div>
+
         <button type="submit" class="send-order-btn">
           Send
-          <svg width="26" height="10" class="arrow-icon">
+          <svg class="arrow-icon">
             <use href="../Img-P100/symbol-defs.svg#icon-order"></use>
           </svg>
         </button>
       </form>
     </div>
-    <div class="image-container">
+
+    <picture class="image-container">
+      <!-- Desktop screen -->
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./Img-P100/Your-Order/desktop/clothe-pc.jpg    1x,
+          ./Img-P100/Your-Order/desktop/clothe-pc@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- Tablet screen -->
+
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./Img-P100/Your-Order/tablet/girl-order-tb.jpg    1x,
+          ./Img-P100/Your-Order/tablet/girl-order-tb@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+
       <img
         class="content-image-order"
-        srcset="
-          ./Img-P100/Your-Order/tablet/girl-order-tb.jpg     1x,
-          ../Img-P100/Your-Order/tablet/girl-order-tb@2x.jpg 2x
-          ../Img-P100/Your-Order/desktop/clothe-pc.jpg 1x, 
-          ../Img-P100/Your-Order/desktop/clothe-pc@2x.jpg 2x,
-        "
-        sizes="(min-width: 1280px) 524px, (min-width: 768px) 684px"
-        src="../Img-P100/Your-Order/tablet/girl-order-tb.jpg"
-        alt="Description of the image"
-        class="content-image-order"
+        src="../Img-P100/Your-Order/desktop/clothe-pc.jpg"
+        alt="Clothe"
+        width="638"
+        loading="lazy"
       />
-    </div>
+    </picture>
   </div>
 </section>
