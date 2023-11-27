@@ -42,7 +42,8 @@
 }
 
 .collection-thumb {
-  border-radius: 4px;
+  width: 335px;
+  height: 400px;
 }
 
 .collection-img {
@@ -94,6 +95,10 @@
     }
   } */
 
+  .collection-thumb {
+    height: 430px;
+  }
+
   .collection-list-item {
     flex-basis: calc((100% - 20px) / 2);
     border: 2px solid transparent;
@@ -122,6 +127,10 @@
     }
   } */
 
+  /* .collection-thumb {
+    width: 347px;
+  } */
+
   .collection-list-item {
     flex-basis: calc((100% - 40px) / 3);
     /* transition: border 250ms linear; */
@@ -145,6 +154,10 @@
     .collection-section {
       background-image: url(../Img-P100/Our-Collection/desktop2/ornament-coll-desk2@x2-min.png);
     }
+  } */
+
+  /* .collection-thumb {
+    width: 400px;
   } */
 
   .collection-list-item {
