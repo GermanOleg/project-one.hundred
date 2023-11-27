@@ -143,17 +143,16 @@
   .hero-title {
     width: 518px;
     height: 192px;
-    margin-top: 194px;
   }
 
   .hero-img {
     margin-top: 100px;
-    width: 342px;
+    width: 392px;
     height: 545px;
   }
 
   .advantage {
-    top: 114px;
+    top: 100px;
   }
 
   .hero-decoration-img {
@@ -166,7 +165,7 @@
 }
 
 /* ============== HERO 2 DESCTOP STYLES ============== */
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   .hero-title {
     width: 632px;
     height: 222px;
@@ -177,15 +176,11 @@
   }
 
   .advantage {
-    top: 166px;
+    top: 166;
     right: 0;
   }
 
-  .hero-img {
-    margin-top: 100px;
-  }
-
-  .hero-title {
-    margin-top: 166px;
+  .advantage {
+    top: 166px;
   }
 }
