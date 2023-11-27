@@ -64,7 +64,7 @@
 
 /** ============================================tablet style===================================**/
 @media screen and (min-width: 768px) {
-	
+
 
 	.testimonials-section-title {
 		font-size: 44px;
@@ -78,7 +78,7 @@
 
 	.testimonials-item {
 		display: flex;
-		
+
 		width: calc((100% - 32px) / 2);
 	}
 
@@ -92,7 +92,6 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		align-items: center;
 		gap: 32px;
 
 	}
@@ -104,7 +103,7 @@
 @media screen and (min-width: 1280px) {
 
 	.testimonials-item {
-		
+
 		width: calc((100% - 52px) / 3);
 	}
 
@@ -118,12 +117,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-	
-.testimonials-item {
-	
-	max-width: 396px;
-	width: calc((100% - 52px) / 3);
-	
-}
+
+	.testimonials-item {
+
+		max-width: 396px;
+		width: calc((100% - 52px) / 3);
+
+	}
 
 }
