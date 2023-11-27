@@ -1,36 +1,41 @@
 .section-aboutus {
     background-image:
-        url(../img/other/elements-mobile.png);
+        url(../Img-P100/About-Us/mobile/ornament-about-mb-min.png);
     background-repeat: no-repeat;
-    background-position: 125px 611px;
+    background-position: 125px 671px;
     background-size: 459px;
 }
 
 
-.container-aboutus{
-display: block;
-margin-top: 1082px;
-gap: 50px;
+.container-aboutus {
+display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
 }
 
 
 .content {
-    display: list-item;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
 }
 
 .header {
     color: #FCF9F9;
     margin-bottom: 54px;
     font-family: Manrope;
-        font-size: 44px;
-        font-weight: 500;
-        line-height: 64px;
-        letter-spacing: -0.03em;
-        text-align: left;
-        text-transform: capitalize;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 64px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-transform: capitalize;
 
 }
-.description{
+
+.description {
     color: #FCF9F966;
     font-family: Manrope;
     font-size: 16px;
@@ -39,104 +44,119 @@ gap: 50px;
     letter-spacing: -0.04em;
     text-align: left;
     margin-bottom: 20px;
-    
+
 }
 
-.content img {
-display: block;
-margin-top: 0;
+.content {
+    display: block;
+    margin-top: 0;
     margin-bottom: 0;
     width: 50%;
     position: relative;
     width: 335px;
     border-radius: 4px;
 }
- 
+
 @media screen and (min-width: 1440px) {
-.section-aboutus {
-            background-position: 895px 141px;
-            background-size: 545px;
-    }
-
-
-.container-aboutus {
-    display: flex;
-        margin-top: 141px;
-        gap: 40px;
-        max-width: 1440px;
-            padding: 0 100px;
-    }
-
-
-    .content {
-        display: list-item;
-    }
-
-    .content img {
-        display: block;
-            margin-left: auto;
-            margin-right: 0;
-            width: 50%;
-            position: relative;
-            width: 709px;
-    }
-
-}
-@media screen and (min-width: 768px) {
     .section-aboutus {
-            background-position: 399px 473px;
-            background-size: 545px;
-        }
+        background-position: 895px 1006px;
+        background-size: 545px;
+    }
+
+
     .container-aboutus {
-        display: block;
-        margin-top: 1175px;
-        gap: 40px;
-        max-width: 768px;
-            padding: 0 32px;
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 50px;
     }
 
 
     .content {
-        display: list-item;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
     }
 
-    .content img {
-    display: block;
+    .content {
+        display: block;
         margin-left: auto;
         margin-right: 0;
         width: 50%;
         position: relative;
         width: 709px;
+        border-radius: 4px;
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .section-aboutus {
+        background-image:
+                url(../Img-P100/About-Us/tablet/ornament-about-tb-min.png);
+        background-position: 399px 721px;
+        background-size: 545px;
+    }
+
+    .container-aboutus {
+        display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+    }
+
+
+    .content {
+        display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+    }
+
+    .content {
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+        position: relative;
+        width: 704px;
     }
 
 }
 
 @media screen and (min-width: 1280px) {
     .section-aboutus {
-            background-position: 895px 141px;
-            background-size: 545px;
+        background-image:
+                url(../Img-P100/About-Us/desktop2/ornament-about-desk2-min.png);
+        background-position: 895px 1008px ;
+        background-size: 545px;
+    }
+
+        .container-aboutus {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            margin-top: 867px;
         }
-    .container-aboutus {
+    
+    
+        .content {
         display: flex;
-        margin-top: 150px;
-        gap: 50px;
-        max-width: 1280px;
-            padding: 0 98px;
-    }
-
-
-    .content {
-        display: list-item;
-    }
-
-    .content img {
-        display: block;
-        margin-top: auto;
-        margin-bottom: 0;
-        width: 50%;
-        position: relative;
-        width: 594px;
-        border-radius: 4px;
-    }
-
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        }
+    
+        .image {
+            display: block;
+            margin-top: auto;
+            margin-bottom: 0;
+            width: 50%;
+            border-radius: 4px;
+            position: relative;
+        }
 }
