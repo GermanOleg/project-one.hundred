@@ -2,8 +2,11 @@
     background-image:
         url(../Img-P100/About-Us/mobile/ornament-about-mb-min.png);
     background-repeat: no-repeat;
+    background-position: right bottom;
     background-position: 125px 671px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-top: 42px;
+    background-size: 340px 384px;
 }
 
 
@@ -53,10 +56,8 @@ display: inline-flex;
 
 @media screen and (min-width: 768px) {
     .section-aboutus {
-        background-image:
-                url(../Img-P100/About-Us/tablet/ornament-about-tb-min.png);
-        background-position: 399px 721px;
-        background-size: 545px;
+        background-size: 340px 384px;
+        background-position: right bottom;
     }
 
     .container-aboutus {
@@ -87,10 +88,8 @@ display: inline-flex;
 
 @media screen and (min-width: 1280px) {
     .section-aboutus {
-        background-image:
-                url(../Img-P100/About-Us/desktop2/ornament-about-desk2-min.png);
-        background-position: 895px 1008px ;
-        background-size: 545px;
+        background-size: 340px 384px;
+        background-position: right bottom;
     }
 
         .container-aboutus {
@@ -99,7 +98,6 @@ display: inline-flex;
             justify-content: center;
             align-items: center;
             gap: 50px;
-            margin-top: 867px;
         }
     
     
@@ -122,8 +120,8 @@ display: inline-flex;
 
 @media screen and (min-width: 1440px) {
     .section-aboutus {
-        background-position: 895px 1056px;
-        background-size: 545px;
+        background-size: 340px 384px;
+        background-position: right bottom;
     }
 
 
