@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <script type="module" crossorigin src="/project-one.hundred/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-one.hundred/assets/index-fa2d2f36.css">
+    <link rel="stylesheet" href="/project-one.hundred/assets/index-480c1057.css">
   </head>
   <body>
     
@@ -290,7 +290,82 @@
   </div>
 </section>
 
-      
+      <section class="section your-order">
+  <div class="container order-container">
+    <div>
+      <h2 class="headline" id="order">
+        <span class="yellow-style">Your order</span> is our priority:
+        Personalized approach and quality of service
+      </h2>
+      <form class="form" name="order-form" autocomplete="off">
+        <label class="label">
+          <input
+            type="text"
+            name="user-name"
+            class="form-input form-bg-style"
+            placeholder="Enter your full name"
+            pattern="[a-z]{1,15}"
+            required
+          />
+        </label>
+
+        <label class="label">
+          <input
+            type="text"
+            name="user-email"
+            class="form-input form-bg-style"
+            placeholder="Enter your email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            required
+          />
+        </label>
+
+        <div class="textarea">
+          <label class="label">
+            <textarea
+              name="user-comment"
+              class="customers-comments form-bg-style"
+              placeholder="Comments"
+            ></textarea>
+          </label>
+        </div>
+
+        <button type="submit" class="send-order-btn">
+          Send
+          <svg class="arrow-icon">
+            <use href="../Img-P100/symbol-defs.svg#icon-order"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <picture class="image-container">
+      <!-- Desktop screen -->
+
+      <source
+        media="(min-width: 1280px)"
+        srcset="/project-one.hundred/assets/clothe-pc-7239e369.jpg 1x, /project-one.hundred/assets/clothe-pc@2x-eeca6911.jpg 2x"
+        type="image/jpg"
+      />
+      <!-- Tablet screen -->
+
+      <source
+        media="(min-width: 768px)"
+        srcset="/project-one.hundred/assets/girl-order-tb-12f534fc.jpg 1x, /project-one.hundred/assets/girl-order-tb@2x-f9c2d13f.jpg 2x"
+        type="image/jpg"
+      />
+
+      <img
+        class="content-image-order"
+        src="../Img-P100/Your-Order/desktop/clothe-pc.jpg"
+        alt="Clothe"
+        width="638"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+</section>
+
       <section class="section" id="testimonials">
   <div class="container">
     <h2 class="testimonials-section-title">Testimonials</h2>
