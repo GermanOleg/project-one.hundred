@@ -1,32 +1,24 @@
 
-
-  /* header */
     .header-part .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
       align-content: center;
       position: relative;
-    }
-  
-    .container {
-      width: 375px;
-      padding-left: auto;
       padding-top: 20px;
-      padding-right: auto;
-      margin: 0 auto;
-  
-    }
-
-    * {
-  margin: 0;
-  padding: 0;
     }
   
     .nav-menu {
       display: none;
   
     }
+
+    .header-nav {
+      display: flex;
+      align-items: center;
+
+    }
+
   
     .info-contact {
       display: none;
@@ -65,6 +57,8 @@
   
     .logo {
       fill: #ECD979;
+      width: 40px;
+      height: 40px;
     }
   
     .mobile-container {
@@ -147,7 +141,7 @@
       height: auto;
       position: absolute;
       right: 5.13%;
-      left: -12%;
+      left: -6%;
       width: 105%;
       bottom: -95.78%;
       top: 100.89%;
@@ -191,6 +185,7 @@
         padding-top: 20px;
         margin: 0 auto;
       }
+
   
   
       .btn-nav {
@@ -200,7 +195,7 @@
       .info-social {
         display: flex;
         gap: 12px;
-        margin-left: 440px;
+        margin-left: 470px;
       }
   
   
@@ -228,7 +223,7 @@
       .header-nav {
         display: flex;
         align-items: center;
-        width: 60%;
+        width: 100%;
       }
   
       .btn-nav {
@@ -244,7 +239,8 @@
       .nav-menu {
         display: flex;
         gap: 25px;
-        margin: 0 auto;
+        margin-left: 40px;
+        margin-right: 70px;
       }
   
       .menu-text {
@@ -300,6 +296,10 @@
         display: flex;
         gap: 0;
       }
+
+      .mobile-container {
+        display: none;
+      }
     }
   
     @media screen and (min-width: 1440px) {
@@ -314,7 +314,13 @@
   
       .header-nav {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        width: 55%;
+        width: 100%;
+
+      }
+      
+      .nav-menu {
+        margin-left: 0;
       }
     }
