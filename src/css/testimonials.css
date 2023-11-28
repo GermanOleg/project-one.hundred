@@ -1,0 +1,131 @@
+.testimonials-item {
+	display: none;
+	max-width: 336px
+}
+
+
+
+.testimonials-section-title {
+	text-align: left;
+	color: #FCF9F9;
+	font-family: Manrope;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.375;
+	letter-spacing: -0.06em;
+	margin-bottom: 64px;
+}
+
+.testimonials-item-box {
+	position: relative;
+	height: 286px;
+	display: inline-block;
+	padding: 0px 18px 18px 18px;
+	border-radius: 4px;
+	border: 1px solid rgba(252, 249, 249, 0.10);
+}
+
+.testimonials-item:nth-child(1) {
+	display: block;
+}
+
+.testimonials-item-img {
+
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+
+}
+
+.testimonials-item-title {
+	color: #FCF9F9;
+	text-align: center;
+	font-family: Manrope;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 8px;
+	margin-top: 54px;
+}
+
+.testimonials-item-desc {
+
+	color: rgba(252, 249, 249, 0.40);
+	text-align: center;
+	font-family: Manrope;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+
+/** ============================================tablet style===================================**/
+@media screen and (min-width: 768px) {
+
+
+	.testimonials-section-title {
+		font-size: 44px;
+		line-height: 1.45;
+		letter-spacing: -0.0825em;
+	}
+
+
+	.testimonials-item-desc {
+		font-size: 16px;
+	}
+
+	.testimonials-item {
+		display: flex;
+
+		width: calc((100% - 32px) / 2);
+	}
+
+	.testimonials-item:nth-child(3) {
+		display: none;
+	}
+
+
+	.testimonials-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 32px;
+
+	}
+
+
+}
+
+/**==================================desktop style===================================**/
+@media screen and (min-width: 1280px) {
+
+	.testimonials-item {
+
+		width: calc((100% - 52px) / 3);
+	}
+
+	.testimonials-list {
+		gap: 26px;
+	}
+
+	.testimonials-item:nth-child(3) {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+
+	.testimonials-item {
+
+		max-width: 396px;
+		width: calc((100% - 52px) / 3);
+
+	}
+
+}
