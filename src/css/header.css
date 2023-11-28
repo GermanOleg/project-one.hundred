@@ -263,6 +263,7 @@
         font-style: normal;
         display: flex;
         gap: 20px;
+        justify-content: flex-end;
       }
   
       .info-contact {
