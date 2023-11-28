@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  padding-bottom: 80px;
 }
 
 .advantage {
@@ -24,11 +23,15 @@
   line-height: 1.22;
   letter-spacing: -0.03em;
   width: 335px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .golden-deco {
   color: #ecd979;
+}
+
+.hero-anchor {
+  display: block;
 }
 
 .hero-link {
@@ -82,8 +85,12 @@
     line-height: 1.18;
     width: 549px;
     height: 192px;
-    margin-bottom: 40px;
     margin-top: 106px;
+  }
+
+  .hero-img {
+    width: 413px;
+    height: 575px;
   }
 
   .hero-link {
@@ -134,15 +141,17 @@
 
 /* ============== HERO DESCTOP STYLES ============== */
 
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
   .hero-container {
     display: flex;
     flex-direction: row-reverse;
+    min-width: 1280px;
   }
 
   .hero-title {
     width: 518px;
     height: 192px;
+    margin-top: 194px;
   }
 
   .hero-img {
@@ -152,11 +161,12 @@
   }
 
   .advantage {
-    top: 100px;
+    top: 114px;
+    right: 100px;
   }
 
   .hero-decoration-img {
-    right: 0;
+    right: 100px;
   }
 
   .break {
@@ -165,7 +175,11 @@
 }
 
 /* ============== HERO 2 DESCTOP STYLES ============== */
-@media (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
+  .hero-container {
+    margin-left: unset;
+    margin-right: unset;
+  }
   .hero-title {
     width: 632px;
     height: 222px;
