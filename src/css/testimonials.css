@@ -14,11 +14,12 @@
 	font-weight: 500;
 	line-height: 1.375;
 	letter-spacing: -0.06em;
-	padding-bottom: 40px;
+	margin-bottom: 64px;
 }
 
 .testimonials-item-box {
-
+	position: relative;
+	height: 286px;
 	display: inline-block;
 	padding: 0px 18px 18px 18px;
 	border-radius: 4px;
@@ -31,10 +32,11 @@
 
 .testimonials-item-img {
 
-	margin: 0 auto;
-	z-index: 9999999999;
-	margin-top: -24px;
-	margin-bottom: 20px;
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 
 }
 
@@ -46,8 +48,8 @@
 	font-style: normal;
 	font-weight: 600;
 	line-height: 1.5;
-	padding-bottom: 8px;
-
+	margin-bottom: 8px;
+	margin-top: 54px;
 }
 
 .testimonials-item-desc {
@@ -71,6 +73,7 @@
 		line-height: 1.45;
 		letter-spacing: -0.0825em;
 	}
+
 
 	.testimonials-item-desc {
 		font-size: 16px;
