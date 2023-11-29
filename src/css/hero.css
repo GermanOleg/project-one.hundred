@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: unset;
+  padding-top: 60px;
   padding-bottom: unset;
 }
 
@@ -55,7 +55,7 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   margin-bottom: 40px;
-  margin-left: 70px;
+  margin-left: 90px;
 }
 
 .hero-link:hover,
@@ -71,6 +71,9 @@
 /* ============== HERO TABLET STYLES ============== */
 
 @media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: unset;
+  }
   .hero-container {
     display: flex;
     flex-direction: column;
@@ -184,6 +187,7 @@
     display: flex;
     flex-direction: row-reverse;
     min-width: unset;
+    margin: 0 auto;
   }
 
   .hero-title {
