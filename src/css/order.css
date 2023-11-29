@@ -9,7 +9,9 @@
   padding-top: 670px;
   padding-bottom: 80px;
 }
-
+.arrow-icon {
+  height: 100%;
+}
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
@@ -22,10 +24,11 @@
 /*TABLET START*/
 @media only screen and (min-width: 768px) {
   .your-order {
-    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb.jpg);
-    background-position: top 50px center;
+    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb.jpg),
+      url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
+    background-position: top 50px center, bottom left;
     padding-top: 926px;
-    background-size: 768px 776px;
+    background-size: 768px 776px, 323px 484px;
   }
 }
 
@@ -33,7 +36,8 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .your-order {
-    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb@2x.jpg);
+    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb@2x.jpg),
+      url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
   }
 }
 
@@ -41,10 +45,18 @@
 /*DeESKTOP 1 START*/
 @media only screen and (min-width: 1280px) {
   .your-order {
-    background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc.jpg);
+    background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc.jpg),
+      url(../Img-P100/Your-Order/desktop/ornament-order-desk-min.png);
     padding-top: 1000px;
-    background-position: top 75px center;
-    background-size: 1282px 776px;
+    background-position: top 75px center, bottom left;
+    background-size: 1282px 776px, 289px 484px;
+    padding-bottom: 0;
+  }
+  .image-container {
+    width: 524px;
+  }
+  .order-form-wrap {
+    max-width: 542px;
   }
 }
 
@@ -52,7 +64,8 @@
   screen and (min-resolution: 192dpi) and (min-width: 1280px),
   screen and (min-resolution: 2dppx) and (min-width: 1280px) {
   .your-order {
-    background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc@2x.jpg);
+    background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc@2x.jpg),
+      url(../Img-P100/Your-Order/desktop/ornament-order-desk@x2-min.png);
   }
 }
 /*DESKTOP 1 END*/
@@ -60,7 +73,8 @@
 /*DESKTOP 2 START*/
 @media only screen and (min-width: 1440px) {
   .your-order {
-    background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2-min.jpg);
+    background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2-min.jpg),
+      url(../Img-P100/Your-Order/desktop2/ornament-order-tb-desk2-min.png);
     width: 1440px;
   }
 }
@@ -69,42 +83,14 @@
   screen and (min-resolution: 192dpi) and (min-width: 1440px),
   screen and (min-resolution: 2dppx) and (min-width: 1440px) {
   .your-order {
-    background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2@x2-min.jpg);
+    background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2@x2-min.jpg),
+      url(../Img-P100/Your-Order/desktop2/ornament-order-tb-desk2-@x2-min.png);
   }
 }
 /*DESKTOP 2 END*/
 
 /*щоб 2 беграунди працювали разом, користуюсь :: before/after, а щоб другий фон пропав на мобілці задаю наступне обмеження*/
 
-@media only screen and (min-width: 768px) {
-  .your-order {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .your-order::before,
-  .your-order::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
-
-  .your-order::before {
-    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb.jpg);
-    background-position: top 50px center;
-    background-size: 768px 776px;
-  }
-
-  .your-order::after {
-    background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
-    background-position: bottom left;
-    background-size: 340px 384px;
-  }
-}
 @media only screen and (max-width: 767.5px) {
   .image-container {
     display: none;
@@ -156,14 +142,14 @@ picture {
 .form-input {
   border-radius: 15px;
   height: 47px;
-  width: 335px;
+  width: 100%;
   margin-bottom: 20px;
   color: #fcf9f9;
 }
 .customers-comments {
   border-radius: 8px;
   height: 169px;
-  width: 335px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -232,12 +218,12 @@ picture {
     display: flex;
     flex-direction: column;
   }
-  .your-order {
+  /*.your-order {
     background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 340px 384px;
-  }
+  }*/
   .content-image-order {
     border-radius: 4px;
     margin-left: auto;
