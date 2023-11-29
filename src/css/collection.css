@@ -110,6 +110,16 @@
   .collection-list-item {
     flex-basis: calc((100% - 40px) / 3);
   }
+
+  .collection-thumb {
+    transition: box-shadow 350ms linear, scale 350ms linear;
+  }
+
+  .collection-thumb:hover,
+  .collection-thumb:focus {
+    box-shadow: 0 0 20px 2px rgba(236, 217, 121, 0.55);
+    scale: 1.04;
+  }
 }
 
 @media screen and (min-width: 1440px) {
