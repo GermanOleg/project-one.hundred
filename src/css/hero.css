@@ -187,6 +187,8 @@
     display: flex;
     flex-direction: row-reverse;
     min-width: unset;
+    margin: 0 auto;
+    min-width: 1440px;
   }
 
   .hero-section {
