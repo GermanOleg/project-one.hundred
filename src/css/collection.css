@@ -1,0 +1,128 @@
+@media screen and (max-width: 374px) {
+  .collection-thumb {
+    max-width: 335px;
+    max-height: 400px;
+  }
+}
+
+.collection-section {
+  padding-top: 40px;
+}
+
+.collection-container {
+  background-image: url(../Img-P100/Our-Collection/mobile/ornament-coll-mob-min.png);
+  background-repeat: no-repeat;
+  background-position: 0 296px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+
+.collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.collection-info {
+  margin-top: 18px;
+}
+
+.collection-img {
+  border-radius: 4px;
+}
+
+.collection-item-name {
+  color: var(--white, #fcf9f9);
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.collection-price {
+  color: rgba(252, 249, 249, 0.4);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 375px) {
+  .collection-thumb {
+    min-width: 335px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .collection-section {
+    padding-top: 50px;
+  }
+
+  .section-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/tablet/ornament-coll-tb-min.png);
+    background-position: 0 221px;
+  }
+
+  .collection-thumb {
+    min-width: 342px;
+    min-height: 430px;
+  }
+
+  .collection-list-item {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .collection-list {
+    gap: 40px 20px;
+  }
+
+  .collection-section {
+    padding-top: 70px;
+  }
+
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/desktop/ornament-coll-desk-min.png);
+  }
+
+  .collection-thumb {
+    min-width: 347px;
+  }
+
+  .collection-list-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .collection-container {
+    background-image: url(../Img-P100/Our-Collection/desktop2/ornament-coll-desk2-min.png);
+    background-position: 0 231px;
+  }
+
+  .collection-thumb {
+    min-width: 400px;
+  }
+
+  .collection-list-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+}

@@ -1,0 +1,251 @@
+/*Green vysyvanka pictures*/
+
+/*MOBILE START*/
+.your-order {
+  background-image: url(../Img-P100/Your-Order/mobile/girl-green-mb.jpg);
+  background-size: 375px 550px;
+  background-repeat: no-repeat;
+  background-position: top 40px center;
+  padding-top: 670px;
+  padding-bottom: 80px;
+}
+.arrow-icon {
+  height: 100%;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/mobile/girl-green-mb@2x.jpg);
+  }
+}
+
+/*MOBILE END*/
+/*TABLET START*/
+@media only screen and (min-width: 768px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb.jpg),
+      url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
+    background-position: top 50px center, bottom left;
+    padding-top: 926px;
+    background-size: 768px 776px, 323px 484px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb@2x.jpg),
+      url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
+  }
+}
+
+/*TABLET END*/
+/*DeESKTOP 1 START*/
+@media only screen and (min-width: 1280px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc.jpg),
+      url(../Img-P100/Your-Order/desktop/ornament-order-desk-min.png);
+    padding-top: 1000px;
+    background-position: top 75px center, bottom left;
+    background-size: 1282px 776px, 289px 484px;
+    padding-bottom: 0;
+  }
+  .image-container {
+    width: 524px;
+  }
+  .order-form-wrap {
+    max-width: 542px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/desktop/girl-green-pc@2x.jpg),
+      url(../Img-P100/Your-Order/desktop/ornament-order-desk@x2-min.png);
+  }
+}
+/*DESKTOP 1 END*/
+
+/*DESKTOP 2 START*/
+@media only screen and (min-width: 1440px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2-min.jpg),
+      url(../Img-P100/Your-Order/desktop2/ornament-order-tb-desk2-min.png);
+    width: 1440px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1440px),
+  screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2@x2-min.jpg),
+      url(../Img-P100/Your-Order/desktop2/ornament-order-tb-desk2-@x2-min.png);
+  }
+}
+/*DESKTOP 2 END*/
+
+/*щоб 2 беграунди працювали разом, користуюсь :: before/after, а щоб другий фон пропав на мобілці задаю наступне обмеження*/
+
+@media only screen and (max-width: 767.5px) {
+  .image-container {
+    display: none;
+  }
+}
+picture {
+  margin: 0;
+  padding: 0;
+}
+.image-container {
+  margin-top: 100px;
+}
+@media only screen and (min-width: 1280px) {
+  .image-container {
+    margin-top: 0px;
+  }
+}
+
+/*перевірено*/
+
+/*HEADLINE*/
+.headline {
+  color: #fcf9f9;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+.yellow-style {
+  color: #ecd979;
+}
+
+/*Form styles*/
+.form-bg-style {
+  background-color: inherit;
+  outline: transparent;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #fcf9f9;
+}
+.form-bg-style:focus {
+  border-color: rgba(252, 249, 249, 0.6);
+}
+
+.form-input {
+  border-radius: 15px;
+  height: 47px;
+  width: 100%;
+  margin-bottom: 20px;
+  color: #fcf9f9;
+}
+.customers-comments {
+  border-radius: 8px;
+  height: 169px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .headline {
+    line-height: 1.31818;
+    font-size: 44px;
+    width: 542px;
+  }
+  .form-bg-style {
+    font-size: 16px;
+  }
+  .form-input {
+    height: 50px;
+    width: 508px;
+  }
+  .customers-comments {
+    height: 196px;
+    width: 508px;
+  }
+}
+
+.textarea {
+  margin-bottom: 40px;
+}
+
+/*Button*/
+.send-order-btn {
+  max-width: 145px;
+  height: 49px;
+  background-color: inherit;
+  color: #fcf9f9;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  display: flex;
+  padding: 14px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .send-order-btn {
+    padding: 14px 39px;
+    margin: 0;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+.send-order-btn:hover {
+  border: 1px solid #ecd979;
+}
+.send-order-btn:focus {
+  border: 1px solid #ecd979;
+}
+/*почала перевіряти*/
+/* Tablet second clothe background start*/
+
+@media only screen and (min-width: 768px) {
+  .order-container {
+    display: flex;
+    flex-direction: column;
+  }
+  /*.your-order {
+    background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 340px 384px;
+  }*/
+  .content-image-order {
+    border-radius: 4px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .your-order {
+    background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
+  }
+}
+
+/* Tablet second clothe background end*/
+
+/* Desktop second background start*/
+@media only screen and (min-width: 1280px) {
+  .order-container {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+}
+
+/* Desktop second background end*/
