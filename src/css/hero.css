@@ -146,6 +146,7 @@
 
 @media screen and (min-width: 1280px) {
   .hero-container {
+    min-width: 1280px;
     display: flex;
     flex-direction: row-reverse;
     min-width: unset;
