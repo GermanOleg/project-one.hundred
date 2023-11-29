@@ -37,7 +37,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/tablet/girl-green-tb@2x.jpg),
-      url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
+      url(../Img-P100/Your-Order/tablet/girl-green-tb@2x.jpg);
   }
 }
 
@@ -73,6 +73,7 @@
 /*DESKTOP 2 START*/
 @media only screen and (min-width: 1440px) {
   .your-order {
+    margin: 0 auto;
     background-image: url(../Img-P100/Your-Order/desktop2/girl-green-desk2-min.jpg),
       url(../Img-P100/Your-Order/desktop2/ornament-order-tb-desk2-min.png);
     width: 1440px;
@@ -230,13 +231,13 @@ picture {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+/*@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .your-order {
     background-image: url(../Img-P100/Your-Order/tablet/ornament-order-tb.desk2-@x2-min.png);
   }
-}
+}*/
 
 /* Tablet second clothe background end*/
 
