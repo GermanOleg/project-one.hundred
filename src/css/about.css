@@ -14,6 +14,7 @@ display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 50px;
+    margin: 0 auto;
 }
 
 
@@ -55,8 +56,8 @@ display: inline-flex;
     margin-bottom: 0;
     position: relative;
     border-radius: 4px;
-    width: 335px;
-        height: 499px;
+    width:355px;
+    height:auto;
 }
 
 
